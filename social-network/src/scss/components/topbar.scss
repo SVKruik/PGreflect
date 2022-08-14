@@ -57,13 +57,28 @@
         }
     }
 
+    .searchbar_input {
+        height: 52px;
+        padding: 0px 60px 0px 18px;
+        width: 100%;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        font-family: "Titillium Web", sans-serif;
+        color: $color-white;
+        display: flex;
+        border: none;
+        background-color: $color-accent;
+    }
+
     .experience-indicator_container {
         font-weight: 800;
         color: $color-white;
         font-size: 0.75rem;
         text-transform: uppercase;
         padding-top: 5px;
-        margin: 0px 28px 0px 0px;
+        padding-right: 20px;
+        border-right: 1px solid $color-icon;
 
         .experience-indicator_bar {
             background-color: $topbar-background-color;
@@ -82,7 +97,7 @@
         }
 
         .experience-indicator_span2 {
-            margin-left: 61px;
+            margin-left: 58px;
         }
     }
 }
