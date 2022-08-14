@@ -1,20 +1,19 @@
 import Logo from "./components/Logo";
 import ActionItem from "./components/ActionItem";
 import MainMenu from "./components/MainMenu";
-import Search from "./components/Search";
+import SearchBar from "./components/SearchBar";
 import ExperienceIndicator from "./components/ExperienceIndicator";
-import Actions from "./components/Actions";
+import ActionsMenu from "./components/ActionsMenu";
 
 const Topbar = () => {
     return <header className="topbar">
         <Logo />
-        <ActionItem iconTitle="grid"/>
+        <ActionItem iconTitle="grid" />
         <MainMenu />
-        <Search />
+        <SearchBar />
         <ExperienceIndicator />
-        <Actions />
-        Topbar Placeholder
-        </header>;
+        <ActionsMenu />
+    </header>;
 }
 
 export default Topbar;

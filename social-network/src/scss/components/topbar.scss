@@ -1,0 +1,59 @@
+.topbar {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 0 26px;
+    justify-content: space-between;
+    align-items: center;
+    background: $topbar-background-color;
+
+    .logo_container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .logo_image {
+            height: 50px;
+            width: 50px;
+        }
+
+        .logo_image path {
+            fill: $color-white  !important;
+        }
+
+        .logo_title {
+            color: $color-white;
+            font-size: 20px;
+            font-family: "Titillium Web", sans-serif;
+            text-transform: uppercase;
+            margin-left: 4px;
+        }
+    }
+
+    nav {
+        .main-menu_list {
+            display: flex;
+            list-style: none;
+        }
+    }
+
+    .main-menu_list-item {
+        a {
+            padding: 0 24px;
+            color: $color-white;
+            font-size: 0.75rem;
+            text-decoration: none;
+            font-weight: 700;
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+
+        &.active {
+            a {
+                color: $color-hover
+            }
+        }
+    }
+}
