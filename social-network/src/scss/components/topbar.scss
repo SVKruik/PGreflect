@@ -5,7 +5,7 @@
     padding: 0 26px;
     justify-content: space-between;
     align-items: center;
-    background: $topbar-background-color;
+    background: $color-primary;
 
     .logo_container {
         height: 100%;
@@ -46,58 +46,91 @@
             font-weight: 700;
 
             &:hover {
-                color: $color-hover;
+                color: $color-accent;
             }
         }
 
         &.active {
             a {
-                color: $color-hover
+                color: $color-accent
             }
         }
     }
 
-    .searchbar_input {
+    .searchbar_container {
         height: 52px;
-        padding: 0px 60px 0px 18px;
-        width: 100%;
+        padding-left: 18px;
+        width: 570px;
         border-radius: 12px;
-        font-size: 0.75rem;
-        font-weight: 700;
-        font-family: "Titillium Web", sans-serif;
-        color: $color-white;
         display: flex;
-        border: none;
-        background-color: $color-accent;
+        justify-content: space-between;
+        background-color: $color-primary-dark;
+
+        input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            color: $color-white;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+
+            &::placeholder {
+                font-weight: 400;
+                color: $color-icon-light;
+                opacity: 0.6;
+                font-size: 0.9rem;
+            }
+        }
+
+        .searchbar_icon-container {
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: $color-icon-light;
+            opacity: 0.6;
+        }
     }
 
     .experience-indicator_container {
-        font-weight: 800;
-        color: $color-white;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        padding-top: 5px;
-        padding-right: 20px;
-        border-right: 1px solid $color-icon;
+        width: 110px;
+        display: flex;
+        flex-direction: column;
 
-        .experience-indicator_bar {
-            background-color: $topbar-background-color;
+        .experience-indicator_info {
+            width: 100%;
+            font-weight: 800;
+            display: flex;
+            justify-content: space-between;
+            color: $color-white;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .experience-indicator_bar-container {
+            height: 4px;
+        }
+
+        progress {
+            width: 100%;
+            height: 4px;
+            background-color: $color-primary;
+
+            &::-webkit-progress-bar,
+            &::-webkit-progress-value {
+                border-radius: 7px;
+                height: 4px;
+            }
         }
 
         progress::-webkit-progress-bar {
-            background-color: $color-accent;
-            border-radius: 7px;
-            height: 4px;
+            background-color: $color-primary-dark;
         }
 
         progress::-webkit-progress-value {
-            background-color: $color-hover;
-            border-radius: 7px;
-            height: 4px;
-        }
-
-        .experience-indicator_span2 {
-            margin-left: 58px;
+            background-color: $color-accent;
         }
     }
 }

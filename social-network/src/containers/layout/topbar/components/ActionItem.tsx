@@ -1,4 +1,5 @@
 import { FC } from "react";
+import MenuItem from "./MenuItem";
 
 interface ActionItemProps {
     iconTitle: string;
@@ -7,7 +8,7 @@ interface ActionItemProps {
 const ActionItem: FC<ActionItemProps> = ({ iconTitle }: any) => {
     return (
         <div className="action-item">
-            <i className={`bi bi-${iconTitle}`}></i>
+            <MenuItem addressTo="home"><i className={`bi bi-${iconTitle}`}></i></MenuItem>
         </div>
     )
 }
